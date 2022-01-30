@@ -1,0 +1,6 @@
+// transition timing
+
+%tt {
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-fun);
+} // @extend %tt;

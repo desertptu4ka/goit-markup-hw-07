@@ -1,0 +1,30 @@
+.btn {
+  // width: 200px;
+  // height: 50px;
+
+  margin: auto;
+  display: block;
+  padding: 10px 32px;
+
+  font-family: inherit;
+  background: var(--brend-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--brend-color-3);
+  @extend %tt;
+}
+
+.btn:hover,
+.btn:focus,
+.user-email-button:hover,
+.modal-send-button:hover {
+  background: var(--btn-hover-color);
+  cursor: pointer;
+}

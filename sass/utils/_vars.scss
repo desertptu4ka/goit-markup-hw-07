@@ -1,0 +1,23 @@
+:root {
+  --brend-color: #2196f3;
+  --brend-color-2: #000;
+  --brend-color-3: #fff;
+  --text-color: #212121;
+  --text-description-color: #757575;
+  --text-contats-footer: rgba(255, 255, 255, 0.6);
+
+  --btn-hover-color: #188ce8;
+
+  --bg-hero: #2f303a;
+  --bg-about: #fff;
+  --bg-team: #f5f4fa;
+  --bg-footer: #2f303a;
+
+  --icon-accent-color: #fff;
+  --icon-bg-color: var(--btn-hover-color);
+
+  /* ------- TRANSITION PROPS ------- */
+
+  --duration: 250ms;
+  --timing-fun: cubic-bezier(0.4, 0, 0.2, 1);
+}
