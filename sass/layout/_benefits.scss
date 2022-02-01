@@ -2,15 +2,15 @@
   background-color: var(--bg-about);
   padding-bottom: 0;
   margin-bottom: 94px;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 94px auto;
+  }
 }
 
-.benefits-list {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto 94px auto;
-}
-
-.benefits-icon-wrap {
+.benefits__icon-wrap {
   background: var(--bg-team);
   border-radius: 4px;
   width: 270px;
@@ -21,7 +21,7 @@
   margin-bottom: 30px;
 }
 
-.benefits-item {
+.benefits__item {
   width: 270px;
 
   &:nth-child(n + 2) {

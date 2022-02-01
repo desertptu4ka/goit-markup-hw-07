@@ -12,7 +12,7 @@
   letter-spacing: 0.03em;
 }
 
-.about-title {
+.about__title {
   font-weight: bold;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -21,15 +21,12 @@
   margin-bottom: 50px;
 }
 
-.about-works {
+.works {
   display: flex;
-
-  &:nth-child(n + 2) {
-    margin-left: 30px;
-  }
+  justify-content: space-between;
 }
 
-.about-work-item-img-wrap {
+.work__item-img-wrap {
   position: relative;
   overflow: hidden;
 
@@ -53,7 +50,7 @@
   transition-property: bottom;
 }
 
-.img-over-title {
+.works__over-title {
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;

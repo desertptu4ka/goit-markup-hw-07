@@ -6,7 +6,7 @@
   height: 100vh;
   top: 0;
 
-  &.is-hidden > .modal-window {
+  &.is-hidden > .modal {
     transform: translateX(-100vw);
   }
 }
@@ -17,7 +17,7 @@
   pointer-events: none;
 }
 
-.modal-window {
+.modal {
   padding: 40px;
   position: absolute;
   z-index: 11;
@@ -36,7 +36,7 @@
   transition-property: transform opacity;
 }
 
-.modal-close-buttom {
+.modal__close-buttom {
   position: absolute;
 
   right: 8px;
@@ -59,9 +59,8 @@
     fill: var(--brend-color);
   }
 
-  &:hover,
   &:active {
-    border: 1px solid black;
+    border: 1px solid var(--brend-color);
   }
 }
 
@@ -83,12 +82,12 @@
   color: #212121;
 }
 
-.form-field {
+.form__field {
   margin-bottom: 10px;
   position: relative;
 }
 
-.input-text {
+.form__label {
   display: block;
 
   font-family: Roboto;
@@ -98,7 +97,7 @@
   color: #757575;
 }
 
-.form-input {
+.form__input {
   width: 100%;
   height: 40px;
   padding-left: 40px;
@@ -112,8 +111,8 @@
   }
 }
 
-.form-input,
-.user-text {
+.form__input,
+.form__user-text {
   &:hover,
   &:focus {
     border: 1px solid var(--brend-color);
@@ -133,7 +132,7 @@
   height: 18px;
 }
 
-.user-text {
+.form__user-text {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -144,14 +143,14 @@
   resize: none;
 }
 
-.form-field-check {
+.form__field-check {
   height: 24px;
   margin-top: 20px;
   margin-left: calc(54px - 41px);
   margin-right: calc(51px - 39px);
 }
 
-.input-check {
+.form__input-check {
   display: block;
   text-align: right;
   font-family: Roboto;
@@ -164,7 +163,7 @@
   color: #757575;
 }
 
-.form-icons-check {
+.form__icons-check {
   position: absolute;
   top: 5px;
   left: 0px;
@@ -176,20 +175,20 @@
   border-radius: 25%;
 }
 
-.form-check {
+.form__check {
   position: absolute;
   top: 5px;
   left: 0px;
   display: none;
 
-  &:checked ~ .form-icons-check {
+  &:checked ~ .form__icons-check {
     --color1: #fff;
     background: var(--brend-color);
     border: 1px solid var(--brend-color);
   }
 }
 
-.link-rules {
+.form__link-rules {
   font-family: Roboto;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -200,7 +199,7 @@
   color: var(--brend-color);
 }
 
-.modal-send-button {
+.form__send-button {
   display: block;
   width: 200px;
   height: 50px;
